@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TestAudioRecord" >
+    
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Start recording" />
+    
+    <TextView 
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/start"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="45sp"
+        />
+    
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/start"
+        android:text="Stop recording" />
+
+    <Button
+        android:id="@+id/playback"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stop"
+        android:layout_below="@+id/stop"
+        android:layout_marginTop="20dp"
+        android:text="Start playing" />
+    
+    <Button
+        android:id="@+id/btn_setalarm"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/playback"
+        android:layout_below="@id/stop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Set timer" />
+
+</RelativeLayout>
